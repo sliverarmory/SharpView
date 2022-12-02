@@ -1,0 +1,25 @@
+{
+    "name": "SharpView",
+    "version": "v0.0.0",
+    "command_name": "sharpview",
+    "original_author": "tevora-threat",
+    "repo_url": "https://github.com/sliverarmory/SharpView",
+    "help": "C# implementation of harmj0y's PowerView",
+    "entrypoint": "Main",
+    "allow_args": true,
+    "default_args": "-h",
+    "is_reflective": false,
+    "is_assembly": true,
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "SharpView.exe"
+      },
+      {
+        "os": "windows",
+        "arch": "386",
+        "path": "SharpView.exe"
+      }
+    ]
+  }
