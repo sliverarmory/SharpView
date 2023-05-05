@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace SharpView
 {
+
     class Program
     {
         static void Main(string[] args)
@@ -417,7 +418,7 @@ namespace SharpView
                     break;
                 default:
                     Console.WriteLine("No Valid Method entered");
-                    Environment.Exit(0);
+                    return;
                     break;
             }
 
@@ -430,7 +431,7 @@ namespace SharpView
             if(args.Length > 1 && (args[1].ToLower() == "-help" || args[1].ToLower() == "help"))
             {
                 Logger.Write_Output(Environment.NewLine + GetMethodHelp(method));
-                Environment.Exit(0);
+                return;
             }
             ParameterInfo[] parameters = method.GetParameters();
             if (parameters == null || parameters.Length != 1)
